@@ -1,0 +1,49 @@
+<!-- generate_video.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Video - Vakyadarpan 4.0</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>Vakyadarpan 4.0</h1>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/generate-video-page">Generate Video</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Generate Video</h2>
+        <!-- Form for generating videos -->
+        <form action="/generate-video" method="POST" enctype="multipart/form-data">
+            <!-- Input fields for gender and language -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+
+            <label for="language">Language:</label>
+            <select id="language" name="language">
+                <option value="hi">Hindi</option>
+                <option value="bn">Bengali</option>
+                <option value="ta">Tamil</option>
+                <!-- Add more language options here -->
+            </select><br><br>
+
+            <!-- Input field for PDF file -->
+            <label for="pdf">Upload PDF:</label>
+            <input type="file" id="pdf" name="pdf"><br><br>
+
+            <!-- Button to generate video -->
+            <input type="submit" value="Generate Video">
+        </form>
+    </div>
+</body>
+</html>

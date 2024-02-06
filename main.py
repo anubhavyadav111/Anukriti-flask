@@ -29,5 +29,11 @@ def handle_generate_video():
 def success():
     return "Video generated successfully!"
 
+@app.route('/team')
+def about_page():
+    return render_template('about-page.html')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)

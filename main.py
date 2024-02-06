@@ -11,6 +11,10 @@ def index():
 def generate_video_page():
     return render_template('generate-video-page.html')
 
+@app.route('/templates/aboutus.html')
+def aboutus_page():
+    return render_template('aboutus.html')
+
 @app.route('/generate-video', methods=['POST'])
 def handle_generate_video():
     if request.method == 'POST':

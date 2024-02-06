@@ -1,11 +1,12 @@
-<!-- generate_video.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate Video</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutstyles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About Us</title>
 </head>
 <body>
     <!-- NAVIGATION BAR-->
@@ -26,32 +27,79 @@
             </div>
         </div>
     </nav> 
+    <!--Main section-->
     <div class="container">
-        <h2>Generate Video</h2>
-        <!-- Form for generating videos -->
-        <form action="/generate-video" method="POST" enctype="multipart/form-data">
-            <!-- Input fields for gender and language -->
-            <label for="gender">Gender:</label>
-            <select id="gender" name="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select><br><br>
+        <div class="section-title">
+            <h1>Our Team</h1>
+            <h3 style="margin-top: 20px;">Meet Our Squad: Crafting Videos from Text</h3>
+        </div>
 
-            <label for="language">Language:</label>
-            <select id="language" name="language">
-                <option value="hi">Hindi</option>
-                <option value="bn">Bengali</option>
-                <option value="ta">Tamil</option>
-                <!-- Add more language options here -->
-            </select><br><br>
+        <div class="row">
 
-            <!-- Input field for PDF file -->
-            <label for="pdf">Upload PDF:</label>
-            <input type="file" id="pdf" name="pdf"><br><br>
 
-            <!-- Button to generate video -->
-            <input type="submit" value="Generate Video">
-        </form>
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="/static/assets/shashwat.jpg" alt="Team Image">
+                    </div>
+                    <div class="team-content">
+                        <h2>Shashwat Sharma</h2>
+                        <h3>Founder</h3>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-tw"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-yt"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="/static/assets/anubhav.jpg" alt="Team Image">
+                    </div>
+                    <div class="team-content">
+                        <h2>Anubhav <br>Yadav</h2>
+                        <h3>Co-founder</h3>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-tw"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-yt"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="/static/assets/ishika.jpg" alt="Team Image">
+                    </div>
+                    <div class="team-content">
+                        <h2>Ishika<br>Sharma</h2>
+                        <h3>Co-founder</h3>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-tw"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-yt"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="/static/assets/Himanshi.jpg" alt="Team Image">
+                    </div>
+                    <div class="team-content">
+                        <h2>Himanshi <br>Sinha</h2>
+                        <h3>Co=founder</h3>
+                    </div>
+                    <div class="team-social">
+                        <a href="#" class="social-tw"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-yt"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- footer -->
 

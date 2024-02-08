@@ -15,6 +15,10 @@ def generate_video_page():
 def aboutus_page():
     return render_template('aboutus.html')
 
+@app.route('/templates/loginpage.html')
+def login_page():
+    return render_template('loginpage.html')
+
 @app.route('/generate-video', methods=['POST'])
 def handle_generate_video():
     if request.method == 'POST':
